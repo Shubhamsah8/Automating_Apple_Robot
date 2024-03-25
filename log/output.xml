@@ -1,23 +1,82 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-03-25T09:58:12.489317" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-03-26T00:37:54.799961" rpa="false" schemaversion="5">
 <suite id="s1" name="Login" source="C:\Users\RYZEN\IdeaProjects\Robot\src\test\java\Robot\Apple\Login.robot">
-<test id="s1-t1" name="LoginTest" line="7">
+<test id="s1-t1" name="BuyMac" line="15">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-03-25T09:58:12.678346" level="INFO">Opening browser 'Chrome' to base url 'https://www.apple.com/in/'.</msg>
-<arg>https://www.apple.com/in/</arg>
+<msg time="2024-03-26T00:37:55.004168" level="INFO">Opening browser 'Chrome' to base url 'https://www.apple.com/in/'.</msg>
+<arg>${browser}</arg>
 <arg>Chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-03-25T09:58:12.678346" elapsed="3.230641"/>
+<status status="PASS" start="2024-03-26T00:37:55.004168" elapsed="2.204063"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-03-26T00:37:57.209232" elapsed="0.118520"/>
 </kw>
 <kw name="Click Link" owner="SeleniumLibrary">
-<msg time="2024-03-25T09:58:15.908987" level="INFO">Clicking link 'xpath://main[@class='main']//section[2]/div[1]/div/div/div[1]/div/a[2]'.</msg>
-<arg>xpath://main[@class='main']//section[2]/div[1]/div/div/div[1]/div/a[2]</arg>
+<msg time="2024-03-26T00:37:57.328749" level="INFO">Clicking link 'xpath://main[@class='main']//section[2]/div[1]/div/div/div[1]/div/a[2]'.</msg>
+<arg>${Buy_Link}</arg>
 <doc>Clicks a link identified by ``locator``.</doc>
-<status status="PASS" start="2024-03-25T09:58:15.908987" elapsed="1.973383"/>
+<status status="PASS" start="2024-03-26T00:37:57.328749" elapsed="1.483479"/>
 </kw>
-<status status="PASS" start="2024-03-25T09:58:12.677347" elapsed="5.206020"/>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${15_Link}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-03-26T00:37:58.812228" elapsed="0.029000"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-03-26T00:37:58.842228" level="INFO">Clicking button 'xpath://button[@data-autom='filterButton-15inchm3']'.</msg>
+<arg>${15_Link}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-26T00:37:58.841228" elapsed="0.054105"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-03-26T00:37:58.895333" level="INFO">Clicking button 'xpath://button[contains(@data-autom, 'proceed-15inch-ultimate')]'.</msg>
+<arg>${16GB_Unified_Memory}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-26T00:37:58.895333" elapsed="1.598141"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-03-26T00:38:05.494788" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-03-26T00:38:00.493474" elapsed="5.001314"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2024-03-26T00:38:05.495292" level="INFO">Executing JavaScript:
+window.scrollTo(0,500)
+Without any arguments.</msg>
+<arg>window.scrollTo(0,500)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2024-03-26T00:38:05.495292" elapsed="0.004006"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-03-26T00:38:05.500298" level="INFO">Clicking element 'xpath://*[@id="root"]/div[3]/div[3]/div[2]/div[1]/div[2]/div/div[3]'.</msg>
+<arg>${2TB_SSD}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-26T00:38:05.499298" elapsed="0.036642"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-03-26T00:38:05.536942" level="INFO">Clicking button 'xpath://button[contains(@name, 'add-to-cart')]'.</msg>
+<arg>${Add_To_Cart}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-26T00:38:05.535940" elapsed="2.362818"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-03-26T00:38:07.899757" level="INFO">Clicking button 'xpath://button[contains(@data-autom, 'addToBag-studioStandardTiltGroup')]'.</msg>
+<arg>${Studio_Standard}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-26T00:38:07.898758" elapsed="0.057000"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-03-26T00:38:07.956759" level="INFO">Clicking button 'xpath://button[contains(@data-autom, 'proceed')]'.</msg>
+<arg>${Proceed}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-26T00:38:07.956759" elapsed="1.606464"/>
+</kw>
+<status status="PASS" start="2024-03-26T00:37:55.003168" elapsed="14.560055"/>
 </test>
-<status status="PASS" start="2024-03-25T09:58:12.491318" elapsed="5.392049"/>
+<status status="PASS" start="2024-03-26T00:37:54.800961" elapsed="14.763261"/>
 </suite>
 <statistics>
 <total>
