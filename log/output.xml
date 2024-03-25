@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-03-25T09:58:12.489317" rpa="false" schemaversion="5">
+<suite id="s1" name="Login" source="C:\Users\RYZEN\IdeaProjects\Robot\src\test\java\Robot\Apple\Login.robot">
+<test id="s1-t1" name="LoginTest" line="7">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-03-25T09:58:12.678346" level="INFO">Opening browser 'Chrome' to base url 'https://www.apple.com/in/'.</msg>
+<arg>https://www.apple.com/in/</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-03-25T09:58:12.678346" elapsed="3.230641"/>
+</kw>
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-03-25T09:58:15.908987" level="INFO">Clicking link 'xpath://main[@class='main']//section[2]/div[1]/div/div/div[1]/div/a[2]'.</msg>
+<arg>xpath://main[@class='main']//section[2]/div[1]/div/div/div[1]/div/a[2]</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-25T09:58:15.908987" elapsed="1.973383"/>
+</kw>
+<status status="PASS" start="2024-03-25T09:58:12.677347" elapsed="5.206020"/>
+</test>
+<status status="PASS" start="2024-03-25T09:58:12.491318" elapsed="5.392049"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Login">Login</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
